@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+*{box-sizing: border-box}
+body,html{
+height: 100%;
+margin: 0;
+font-family:algerian;
+}
+.tablink{
+background-color: black;
+color: white;
+float: left;
+border: none;
+outline: none;
+cursor: pointer;
+padding: 14px 16px;
+font-size : 17px;
+width: 25%;
+}
+.tablink:  {
+background-color:black;
+}
+.tabcontent{
+color:white;
+display: none;
+padding: 100px 20px;
+height: 100%;
+}
+#Home{background-color:red;}
+#News{background-color: green;}
+#Menters and Members{background-color:blue;}
+#Projects{background-color:orange;}
+</style>
+<title>cyber security</title>
+</head>
+<body>
+<u style="color:black;"><h1 style="color:black;text-align:center;font-size:100px;font-family:kunstler script;">Cyber Security</h1></u>
+<button class="tablink" oneclick="openpage('Home',this,'red')">Home</button>
+<button class="tablink" oneclick="openpage('News',this,'green')"id="defauitopen">News</button>
+<button class="tablink" oneclick="openpage('Mentors and Members',this,'blue')">Mentors and Members</button>
+<button class="tablink" oneclick="openpage('Projects',this,'orange')">Projects</button>
+<div id="Home" class="tabcontent">
+<h3>Home</h3>
+<p>hgffguy</p>
+</div>
+<div id="News" class="tabcontent">
+<h3>News</h3>
+<p>ggedfgd</p>
+</div>
+<div id="Mentors and Members" class="tabcontent">
+<h3>Mentors and Members</h3>
+<p>bdgfgfgdbf</p>
+</div>
+<div id="Project" class="tabcontent">
+<h3>Projects</h3>
+<p>fgfhbfhfh</p></div>
+<script>
+function openpage(pageName,elmnt,color)
+{
+var i,tabcontent,tablinks;
+tabcontent=document.getElementsByClassName("tabcontent");
+for (i=0;i<tabcontent.lenght;i++){
+tabcontent[i].style.backgroundColor="";}
+tablinks=document.get.ElementsByClassName("tablink");
+for(i=0;i<tablinks.lenght;i++){
+tablinks[i].style.backgroundColour="";
+}
+document.getElementById(pageName).style.display="block";
+elmnt.style.backgroundColor=color;
+}
+document.getElementById("defaultopen").click()
+</script>
+</body>
+</html>
